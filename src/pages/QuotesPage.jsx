@@ -30,7 +30,7 @@ const QuotesPage = () => {
 
   const fetchQuote = async () => {
     try {
-      const response = await axios.get("http://localhost:5050/random-quote");
+      const response = await axios.get("http:/52.91.190.158:5050/random-quote");
       const fetchedQuote = {
         content: response.data.content,
         author: response.data.author,
