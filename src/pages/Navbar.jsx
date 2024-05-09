@@ -2,8 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   const handleSignOut = () => {
-    window.open('https://inspireai.auth.us-east-1.amazoncognito.com/logout?client_id=38vlaj528ei4s75kamm22h25n7&logout_uri=http%3A%2F%2F52.91.190.158%3A5050%2F
-', '_blank');
+    window.open('https://inspireai.auth.us-east-1.amazoncognito.com/logout?client_id=38vlaj528ei4s75kamm22h25n7&logout_uri=http%3A%2F%2Flocalhost%3A3000%2F', '_blank');
     // Remove authCode from localStorage
     localStorage.removeItem('authCode');
   };
