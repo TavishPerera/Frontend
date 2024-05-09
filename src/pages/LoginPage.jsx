@@ -3,7 +3,7 @@ import React from "react";
 const LoginPage = () => {
 
   const openCognitoLogin = () => {
-    window.open('https://inspireai.auth.us-east-1.amazoncognito.com/oauth2/authorize?client_id=38vlaj528ei4s75kamm22h25n7&response_type=code&scope=openid&redirect_uri=http%3A%2F%2F52.91.190.158%3A5050%2Fquotes', '_blank');
+    window.open('https://inspireai.auth.us-east-1.amazoncognito.com/oauth2/authorize?client_id=38vlaj528ei4s75kamm22h25n7&response_type=code&scope=openid&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fquotes', '_blank');
   };
 
   const pageStyle = {
