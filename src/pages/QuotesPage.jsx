@@ -30,7 +30,7 @@ const QuotesPage = () => {
 
   const fetchQuote = async () => {
     try {
-      const response = await axios.get("https://44.221.61.239:5050/random-quote");
+      const response = await axios.get("http://54.152.236.43:5050/random-quote");
       const fetchedQuote = {
         content: response.data.content,
         author: response.data.author,
@@ -46,7 +46,7 @@ const QuotesPage = () => {
 
   const saveNewQuote = async () => {
         try {
-          await axios.post("http://52.91.190.158:5050/quotes", {
+          await axios.post("http://54.152.236.43:5050/quotes", {
             id: generateRandomId().toString(),
             author: quote.author,
             text: quote.content,
@@ -60,7 +60,7 @@ const QuotesPage = () => {
 
   const saveQuote = async (isLiked, quoteToSave) => {
     try {
-      await axios.post("http://52.91.190.158:5050/quotes", {
+      await axios.post("http://54.152.236.43:5050/quotes", {
         id: generateRandomId().toString(),
         author: quoteToSave.author,
         text: quoteToSave.content,
@@ -75,7 +75,7 @@ const QuotesPage = () => {
 
   const fetchSavedQuotes = async () => {
     try {
-      const response = await axios.get("http://52.91.190.158:5050/quotes");
+      const response = await axios.get("http://54.152.236.43:5050/quotes");
       setSavedQuotes(response.data);
     } catch (error) {
       console.error("Error fetching saved quotes:", error);
