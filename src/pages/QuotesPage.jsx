@@ -25,7 +25,7 @@ const QuotesPage = () => {
   const isAuthenticated = localStorage.getItem('authCode');
 
   const generateRandomId = () => {
-    return Math.floor(Math.random() * 10000); // Simple random ID generator
+    return Math.floor(Math.random() * 10000);
   };
 
   const fetchQuote = async () => {
